@@ -1,0 +1,54 @@
+.support-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .support-search {
+    width: 97%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-section h3 {
+    margin-top: 1.5rem;
+    color: #333;
+  }
+  
+  .faq-section ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .contact-form {
+    margin-top: 2rem;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .contact-form button {
+    background-color: #75b2f4;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #499bf2;
+  }
+  

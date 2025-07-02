@@ -1,0 +1,143 @@
+.navbar {
+  position: relative;
+  top: 0;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.profile-name {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #6db2fc;
+}
+
+.active-link {
+  color: #6db2fc;
+}
+
+.sliding-underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #6db2fc;
+  transition: left 0.3s ease, width 0.3s ease;
+  border-radius: 2px;
+}
+
+.navbar-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+@keyframes dropdownSlideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sub-menu-wrap {
+  animation: dropdownSlideFade 0.3s ease;
+}
+
+.login-button {
+  padding: 8px 16px;
+  margin-left: 40px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  background-color: #004495;
+  transform: scale(0.98);
+}
+
+@media (max-width: 750px) {
+  .navbar-right {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    display: none;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sliding-underline {
+    display: none;
+  }
+}

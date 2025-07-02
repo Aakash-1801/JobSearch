@@ -1,0 +1,34 @@
+.my-registrations {
+    padding: 20px;
+    max-width: 700px;
+    min-height: 1000px;
+    margin: auto;
+  }
+  
+  .registration-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .registration-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  .registration-item h3 {
+    margin: 0 0 8px;
+    color: #007bff;
+  }
+  
+  .resume-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  .resume-link:hover {
+    text-decoration: underline;
+  }
+  

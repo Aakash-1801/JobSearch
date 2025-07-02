@@ -1,0 +1,85 @@
+.job-post-form {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.job-post-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: #222;
+  font-weight: 600;
+}
+
+.job-post-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-post-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-post-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.job-post-form input,
+.job-post-form textarea,
+.job-post-form select {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.job-post-form input:focus,
+.job-post-form textarea:focus,
+.job-post-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.job-post-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.job-post-form button {
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.job-post-form button:hover {
+  background-color: #0056b3;
+}
+
+.form-message {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: green;
+}
+
+.checkbox-group {
+  display: grid;
+}

@@ -1,0 +1,96 @@
+/* .pop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  }
+  
+  .pop-card {
+    width: 22%;
+    min-width: 220px;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: #f5f9ff;
+    transition: transform 0.2s ease;
+  }
+  
+  .pop-card:hover {
+    transform: scale(1.03);
+    background-color: #e6f0ff;
+  }
+  
+  .pop-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .pop-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10% 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #75b8ff;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+  }
+   */
+
+   .quick-filter-section {
+    padding: 40px 60px;
+    background-color: #fff;
+  }
+  
+  .quick-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+  }
+  
+  .quick-filter-button {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 36px;
+    background-color: #f0f6ff;
+    border: 2px solid #c2d4f3;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #102c57;
+    font-size: 1.25rem;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quick-filter-button:hover {
+    background-color: #dbe8ff;
+    transform: translateY(-2px);
+  }
+  
+  .quick-filter-icon {
+    font-size: 1.8rem;
+  }
+  

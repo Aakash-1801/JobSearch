@@ -1,0 +1,62 @@
+.browse-container {
+  width: 100%;
+  max-width: 1300px; /* ✅ More space */
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.browse-page {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 160px;
+}
+
+.browse-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/* Left scrollable list */
+.browse-left {
+  width: 32%;
+  overflow-y: auto;
+  padding: 16px;
+  border-right: 1px solid #eee;
+}
+
+/* Right content scrolls only if needed */
+.browse-right {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  /* ✅ Add these: */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f0f2f5;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.filter-section label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.filter-section select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

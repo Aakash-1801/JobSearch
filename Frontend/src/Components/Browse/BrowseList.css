@@ -1,0 +1,59 @@
+.browse-list-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.browse-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.browse-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.browse-type {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+}
+
+.browse-type.internship {
+  background-color: #007bff;
+}
+
+.browse-type.job {
+  background-color: #28a745;
+}
+
+.browse-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.browse-tag {
+  background-color: #eef;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}

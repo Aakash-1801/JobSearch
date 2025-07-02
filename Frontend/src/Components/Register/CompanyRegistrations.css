@@ -1,0 +1,65 @@
+.company-registrations {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+.company-registrations h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+  
+.opportunity-block {
+    background-color: #fefefe;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+  
+.opportunity-block h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+  
+.opportunity-block h3 span {
+    font-size: 0.9rem;
+    color: #555;
+}
+  
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+  
+.registration-table th,
+.registration-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+  
+.registration-table th {
+    background-color: #f3f3f3;
+    font-weight: 600;
+    color: #444;
+}
+  
+.registration-table td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.registration-table td a:hover {
+    text-decoration: underline;
+}
+  
+.loading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}

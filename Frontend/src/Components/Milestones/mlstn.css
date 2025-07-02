@@ -1,0 +1,66 @@
+.milestone {
+    display: flex;
+    flex-wrap: wrap; /* allow blocks to wrap on small screens */
+    gap: 20px; /* spacing between items */
+    padding: 20px;
+    justify-content: space-evenly; /* center items if they wrap */
+    align-items: flex-start;
+  }
+  
+  /* Individual milestone block */
+  .mlstn {
+    width: 18%;
+    min-width: 220px; /* prevent too small on wrap */
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 20px;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Top text section */
+  .mlstn #up {
+    justify-content: center;
+    display: flex;
+    height: 54.4px;
+    text-align: center;
+  }
+  
+  /* Button section */
+  .mlstn #down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 15px;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #75b8ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* --- Responsive Adjustments --- */
+  
+  /* Medium screens: 2 per row */
+  @media (max-width: 768px) {
+    .mlstn {
+      width: 45%;
+      font-size: 22px;
+    }
+  }
+  
+  /* Small screens: 1 per row */
+  @media (max-width: 480px) {
+    .mlstn {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  
