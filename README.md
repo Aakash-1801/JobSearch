@@ -1,71 +1,103 @@
-# Welcome to my MERN stack app
+#  Welcome to My MERN Stack Job Portal
 
 ## Info
 
-A MERN stack Job portal created for Seekers and Companies to interact through Job listings and Internship opportunities.
+A **MERN stack Job Portal** built for **Students** and **Companies** to interact through job listings and internship opportunities.
 
-## Features
+---
 
-This project has dynamic role-based user interface where..
+##  Features
 
-- Students can browse job openings, apply for opprotunity and keep track of their application
-- companies can post job applications with deadlines and can view participants register for their opportunity
-- I have made some api for admin privileges but the use case of my application doesn't require such.
-- I have also made a profile page just for those people who like to decorate their profile.
-- It has permission based access where Users has access to only those pages that has any connection with them like register for application, view your application, your profile page same for company that can post opportunity and view applications and resume of those who have registered for your opportunity.
-- Admins they have all the permissions but they are none for now and there is one superadmin that can create and assign roles to others and do everything that admins can.
+This project includes a dynamic, role-based user interface where:
 
-> If you forgot your password then.. just hit the forgot password button and you will recieve an e-mail with a token link to reset your password then **Remember it**.
+-  **Students** can browse job/internship openings, apply for opportunities, and track their applications.  
+-  **Companies** can post job openings with deadlines and view participant registrations, including resume downloads.  
+-  **Admins** have extended API access. While not actively used in the current app, admin routes exist for role and permission management.  
+-  A **profile page** is available for users who want to personalize their account.  
+-  **Permission-based access** ensures users can only access routes relevant to them.  
+  - Students: apply, view their applications, view/edit their profile.  
+  - Companies: post jobs, view applications/resumes for their opportunities.  
+-  A **Superadmin** exists who can create and assign roles, and perform all admin-level operations.  
 
-## Installation
+> Forgot your password? Use the **"Forgot Password"** feature — you'll receive an email with a token link to reset the password then **remember it!** 
 
-Installing server dependencies
+---
+
+##  Installation
+
+### Backend Setup
+
 ```bash
 cd Backend
 npm install
 ```
-### Env setup
-Enter your mongoDB connection string in **MONGO_URL** section.
 
-for more info about mongoDB connection string visit https://www.mongodb.com/docs/manual/reference/connection-string/
+####  Environment Setup
 
-### Gmail & Nodemailer Setup (for Password Reset)
+In the `.env` file, add:
 
-Gmail does not allow direct login with your Gmail password for third-party apps like Nodemailer, especially if 2-Step Verification is enabled.
-To send password reset emails securely, follow these steps:
+```env
+PORT=5000
+MONGO_URL=your_mongodb_connection_string
+RESET_EMAIL=your_email@gmail.com
+RESET_PASS="your_16_char_app_password"
+JWT_SECRET=your_jwt_secret
+```
 
-### Enable 2-step verification
+ Need help with MongoDB connection string?  
+Visit: https://www.mongodb.com/docs/manual/reference/connection-string/
 
-- Go to your Google Account:
-https://myaccount.google.com/security
+---
 
-- Enable 2-Step Verification under the "Signing in to Google" section.
+###  Gmail & Nodemailer Setup (For Password Reset)
 
+Gmail does not allow direct login for third-party apps like Nodemailer if 2FA is enabled. Use **App Passwords**:
 
-### Create an App Password
+#### 1. Enable 2-Step Verification
 
-goto https://myaccount.google.com/apppasswords
-- under app name section choose name for your app (e.g. Mail)
-- click on create and it will generate a 16 digit password (e.g., xcyw gqmt shsd xklm) copy it.
+- Visit: https://myaccount.google.com/security  
+- Enable **2-Step Verification** under "Signing in to Google"
 
-> In .env under **RESET_EMAIL** enter your email address(users will recieve reset email from this account) and under **RESET_PASS** paste the password that you copied.
+#### 2. Generate App Password
 
-Installing client dependencies
+- Visit: https://myaccount.google.com/apppasswords  
+- Select **App: Your app name (e.g. Mail)**
+- Click **Create**  
+- Copy the 16-character app password (e.g., `xcyw gqmt shsd xklm`)  
+- Use this in your `.env`:
+
+```env
+RESET_EMAIL=your_email@gmail.com
+RESET_PASS=xcyw gqmt shsd xklm
+```
+
+---
+
+###  Frontend Setup
+
 ```bash
 cd Frontend
 npm install
 ```
 
-### Start Project
-start server
+---
+
+##  Running the Project
+
+### Start Backend Server
+
 ```bash
 cd Backend
-npm server.js
+node server.js
 ```
 
-start client
+### Start Frontend
 
-open another terminal and run
+Open another terminal:
+
 ```bash
 cd Frontend
 npm start
+```
+
+---
