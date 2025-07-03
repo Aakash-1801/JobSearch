@@ -1,72 +1,71 @@
-### I am currently creating frontend and UI part
-# Getting Started with Create React App
+# Welcome to my MERN stack app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Info
+
+A MERN stack Job portal created for Seekers and Companies to interact through Job listings and Internship opportunities.
+
+## Features
+
+This project has dynamic role-based user interface where..
+
+- Students can browse job openings, apply for opprotunity and keep track of their application
+- companies can post job applications with deadlines and can view participants register for their opportunity
+- I have made some api for admin privileges but the use case of my application doesn't require such.
+- I have also made a profile page just for those people who like to decorate their profile.
+- It has permission based access where Users has access to only those pages that has any connection with them like register for application, view your application, your profile page same for company that can post opportunity and view applications and resume of those who have registered for your opportunity.
+- Admins they have all the permissions but they are none for now and there is one superadmin that can create and assign roles to others and do everything that admins can.
+
+> If you forgot your password then.. just hit the forgot password button and you will recieve an e-mail with a token link to reset your password then **Remember it**.
+
+## Installation
+
+Installing server dependencies
+```bash
+cd Backend
+npm install
+```
+### Env setup
+Enter your mongoDB connection string in **MONGO_URL** section.
+
+for more info about mongoDB connection string visit https://www.mongodb.com/docs/manual/reference/connection-string/
+
+### Gmail & Nodemailer Setup (for Password Reset)
+
+Gmail does not allow direct login with your Gmail password for third-party apps like Nodemailer, especially if 2-Step Verification is enabled.
+To send password reset emails securely, follow these steps:
+
+### Enable 2-step verification
+
+- Go to your Google Account:
+https://myaccount.google.com/security
+
+- Enable 2-Step Verification under the "Signing in to Google" section.
 
 
-## Available Scripts
+### Create an App Password
 
-In the project directory, you can run:
+goto https://myaccount.google.com/apppasswords
+- under app name section choose name for your app (e.g. Mail)
+- click on create and it will generate a 16 digit password (e.g., xcyw gqmt shsd xklm) copy it.
 
-### `npm start`
+> In .env under **RESET_EMAIL** enter your email address(users will recieve reset email from this account) and under **RESET_PASS** paste the password that you copied.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installing client dependencies
+```bash
+cd Frontend
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Start Project
+start server
+```bash
+cd Backend
+npm server.js
+```
 
-### `npm test`
+start client
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-<!-- ## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+open another terminal and run
+```bash
+cd Frontend
+npm start
